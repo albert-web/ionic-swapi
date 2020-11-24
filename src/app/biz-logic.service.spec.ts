@@ -25,7 +25,10 @@ describe('BizLogicService', () => {
 
   it(
     'getDisplayColor() should color unknown goldenrod'
-    , () => expect(service.getDisplayColor({name: 'unknown'})
-    ).toBe('goldenrod');
-  );
-});
+    , () => expect(
+        service.getDisplayColor({name: 'unknown'})
+        ).toBe('goldenrod')
+    );
+
+      }
+    );
