@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SwapiService } from '../swapi.service';
-import { BizLogicService } 
-from '../biz-Logic.service';
+import { BizLogicService } from '../biz-logic.service';
+
 
 @Component({
   selector: 'app-home',
@@ -23,7 +23,8 @@ export class HomePage {
         ...this.planets
         , ...data
       ].map(x => ({
-        ...x, displayColor: this.bizLogicSvc.getDisplayColor(x)
+        ...x
+        , displayColor: this.bizLogicSvc.getDisplayColor(x)
       }))
       .sort((a, b) => a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1)
       

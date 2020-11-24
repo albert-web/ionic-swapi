@@ -8,7 +8,7 @@ export class BizLogicService {
   constructor() { }
   getDisplayColor(planet) {
     
-    if ('unknow' == planet.name)
+    if ('unknown' == planet.name)
     return 'goldenrod';
     else if ('Tatooine' == planet.name)
     return 'green';
